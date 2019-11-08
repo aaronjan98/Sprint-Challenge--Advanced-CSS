@@ -26,10 +26,12 @@
     color:@bg-color;
     }
     @media @phone {
-        .btn {
-        width: 90%;
-        height: 50px;
-        font-size: 2.5rem;
-        }//end of btn
+        background-color: @btn-bg-color;
+        width: 100%;
+        height: 70px;
+        font-size: 1.8rem;
+        &:hover{
+            color: @btn-bg-color;
+        }
     }//end of @media @phone
 }//end of font-color

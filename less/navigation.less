@@ -3,14 +3,18 @@
     border-bottom: 1px double #e0e0e0;
     background: @bg-nav-f;
     width: 100%;
+    padding: 10px 0;
     .flexbox(center, center){
         flex-direction: column;
     }
     .h1{
         width: 100%;
-        padding: 0.5% 0;
+        padding: 1% 0;
         text-align: center;
         .flexbox(center, center);
+        @media @phone{
+            padding-bottom: 1.5%;
+        }
         h1{
             font-size: 4rem;
         }
@@ -25,6 +29,9 @@
             padding: 0 2%;
             color: @river-bend;
             font-size: 1.5rem;
+            @media @phone{
+                padding: 0 3%;
+            }
         }//end of a
     }//end of nav
-}//end of navigatin
+}//end of navigation
