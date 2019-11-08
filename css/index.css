@@ -223,6 +223,11 @@ footer {
       color: #c01f1f;
     }
   }
+  h1:hover,
+  h2:hover,
+  h3:hover {
+    color: #22283A;
+  }
 }
 .home .main-header-img {
   border-radius: 5px;
@@ -278,6 +283,7 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     padding: 3.5%;
+    margin-top: 10px;
   }
 }
 .home .walk .walk-text {
@@ -323,6 +329,26 @@ footer {
   }
   .home .walk .walk-text .btn:hover {
     color: #22283A;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    color: #c01f1f;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    animation-name: redbutton;
+    animation-duration: 4s;
+    background-color: #c01f1f;
+  }
+  @keyframes redbutton {
+    from {
+      background-color: black;
+    }
+    to {
+      background-color: #c01f1f;
+    }
   }
 }
 .home .walk .walk-img {

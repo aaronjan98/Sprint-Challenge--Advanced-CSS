@@ -9,6 +9,9 @@ h1, h2, h3{
         to {color: @animation-color;}
       }
     color: @animation-color;
+    &:hover{
+      color: @btn-bg-color;
+    }
 }//end of @phone
 }
 
@@ -77,6 +80,7 @@ h1, h2, h3{
       display: flex;
       flex-direction: column-reverse;
       padding: 3.5%;
+      margin-top: 10px;
     }
 
     .walk-text {
@@ -97,7 +101,15 @@ h1, h2, h3{
 
       .btn {
         .custom-btn(@size: 100px);
-
+        @media @phone{
+          animation-name: redbutton;
+          animation-duration: 4s;
+          @keyframes redbutton {
+              from {background-color: black;}
+              to {background-color: @animation-color;}
+            }
+          background-color: @animation-color;
+      }//end of @phone
       }
     }
 
