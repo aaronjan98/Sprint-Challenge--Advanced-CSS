@@ -207,6 +207,23 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  h1,
+  h2,
+  h3 {
+    animation-name: example;
+    animation-duration: 4s;
+    color: #c01f1f;
+  }
+  @keyframes example {
+    from {
+      color: black;
+    }
+    to {
+      color: #c01f1f;
+    }
+  }
+}
 .home .main-header-img {
   border-radius: 5px;
   width: 100%;

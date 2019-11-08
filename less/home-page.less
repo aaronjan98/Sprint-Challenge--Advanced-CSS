@@ -1,6 +1,20 @@
 // Home Content
 
+h1, h2, h3{
+  @media @phone{
+    animation-name: example;
+    animation-duration: 4s;
+    @keyframes example {
+        from {color: black;}
+        to {color: @animation-color;}
+      }
+    color: @animation-color;
+}//end of @phone
+}
+
 .home {
+
+
 
   .main-header-img{
     border-radius: 5px;
